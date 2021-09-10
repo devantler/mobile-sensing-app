@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A048C2D26EBDE0C00C7DFDB /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048C2C26EBDE0C00C7DFDB /* MotionManager.swift */; };
+		0A367D1C26EB675100FB8F7F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A367D1B26EB675100FB8F7F /* LocationManager.swift */; };
+		0A367D1E26EB67F700FB8F7F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A367D1D26EB67F700FB8F7F /* MapView.swift */; };
 		0A4020F626EB588C00669D91 /* MobileSensingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4020F526EB588C00669D91 /* MobileSensingApp.swift */; };
 		0A4020F826EB588C00669D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4020F726EB588C00669D91 /* ContentView.swift */; };
 		0A4020FA26EB588C00669D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4020F926EB588C00669D91 /* Assets.xcassets */; };
 		0A4020FD26EB588C00669D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4020FC26EB588C00669D91 /* Preview Assets.xcassets */; };
+		0ABF91C426EBD5FF00F6580B /* MagnetometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABF91C326EBD5FF00F6580B /* MagnetometerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A048C2C26EBDE0C00C7DFDB /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		0A367D1B26EB675100FB8F7F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		0A367D1D26EB67F700FB8F7F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0A4020F226EB588C00669D91 /* MobileSensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileSensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4020F526EB588C00669D91 /* MobileSensingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileSensingApp.swift; sourceTree = "<group>"; };
 		0A4020F726EB588C00669D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A4020F926EB588C00669D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A4020FC26EB588C00669D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A4020FE26EB588C00669D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABF91C326EBD5FF00F6580B /* MagnetometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A048C2B26EBDDE400C7DFDB /* MotionManagement */ = {
+			isa = PBXGroup;
+			children = (
+				0A048C2C26EBDE0C00C7DFDB /* MotionManager.swift */,
+			);
+			path = MotionManagement;
+			sourceTree = "<group>";
+		};
+		0A367D1F26EB96A100FB8F7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4020F726EB588C00669D91 /* ContentView.swift */,
+				0A367D1D26EB67F700FB8F7F /* MapView.swift */,
+				0ABF91C326EBD5FF00F6580B /* MagnetometerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A367D2026EB96BC00FB8F7F /* LocationManagement */ = {
+			isa = PBXGroup;
+			children = (
+				0A367D1B26EB675100FB8F7F /* LocationManager.swift */,
+			);
+			path = LocationManagement;
+			sourceTree = "<group>";
+		};
 		0A4020E926EB588C00669D91 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +86,10 @@
 		0A4020F426EB588C00669D91 /* MobileSensing */ = {
 			isa = PBXGroup;
 			children = (
+				0A048C2B26EBDDE400C7DFDB /* MotionManagement */,
+				0A367D2026EB96BC00FB8F7F /* LocationManagement */,
+				0A367D1F26EB96A100FB8F7F /* Views */,
 				0A4020F526EB588C00669D91 /* MobileSensingApp.swift */,
-				0A4020F726EB588C00669D91 /* ContentView.swift */,
 				0A4020F926EB588C00669D91 /* Assets.xcassets */,
 				0A4020FE26EB588C00669D91 /* Info.plist */,
 				0A4020FB26EB588C00669D91 /* Preview Content */,
@@ -104,7 +140,7 @@
 				};
 			};
 			buildConfigurationList = 0A4020ED26EB588C00669D91 /* Build configuration list for PBXProject "MobileSensing" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ABF91C426EBD5FF00F6580B /* MagnetometerView.swift in Sources */,
+				0A048C2D26EBDE0C00C7DFDB /* MotionManager.swift in Sources */,
 				0A4020F826EB588C00669D91 /* ContentView.swift in Sources */,
+				0A367D1E26EB67F700FB8F7F /* MapView.swift in Sources */,
 				0A4020F626EB588C00669D91 /* MobileSensingApp.swift in Sources */,
+				0A367D1C26EB675100FB8F7F /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +312,7 @@
 				DEVELOPMENT_TEAM = F2NXL88V7B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MobileSensing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +334,7 @@
 				DEVELOPMENT_TEAM = F2NXL88V7B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MobileSensing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
